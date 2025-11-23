@@ -1,0 +1,347 @@
+/* Global */
+body {
+  margin: 0;
+  background: #f2f2f2;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  background: #111;
+  padding: 18px 30px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Cars Grid */
+.cars-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+/* Car Card */
+.car-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 15%);
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 25%);
+}
+
+.car-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.car-card h2 {
+  margin-top: 12px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.car-card p {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #444;
+}
+
+/* Main Buttons */
+.btn {
+  background: #111;
+  padding: 12px;
+  cursor: pointer;
+  color: white;
+  border-radius: 6px;
+  margin-top: 12px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+/* Car Details Page */
+.details-container {
+  padding: 40px;
+  display: flex;
+  gap: 30px;
+}
+
+.details-container img {
+  width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 25%);
+}
+
+.details-box h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.details-box p {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #444;
+}
+
+.details-price {
+  margin-top: 15px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* Form Page */
+.form-box {
+  width: 420px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 40px auto;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 20%);
+}
+
+.form-box h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-box input:focus {
+  border-color: #111;
+  outline: none;
+}
+
+.form-btn {
+  background: #111;
+  width: 100%;
+  padding: 13px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.form-btn:hover {
+  background: #333;
+}
+
+/* Cart */
+.cart {
+  padding: 40px;
+}
+
+.cart h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.cart-item {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
+}
+
+.cart-item img {
+  width: 160px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Home page additions */
+.hero {
+  background: linear-gradient(90deg, #0b1020 0%, #1b2640 60%);
+  color: white;
+  padding: 72px 20px;
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+  line-height: 1.05;
+}
+
+.hero .muted {
+  color: #ddd;
+  margin-bottom: 18px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Hero CTAs */
+.hero-ctas {
+  margin: 18px 0 8px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.hero-cta {
+  padding: 14px 22px;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(11,16,32,0.45);
+}
+
+.hero-cta.outline {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.16);
+  color: white;
+}
+
+/* Make primary buttons bolder app-wide */
+.btn {
+  background: #111;
+  padding: 12px;
+  cursor: pointer;
+  color: white;
+  border-radius: 6px;
+  margin-top: 12px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.18s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  background: #0f1724;
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.search-bar input[type="text"], .search-bar input:not([type]) {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  min-width: 280px;
+}
+
+.filters label {
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.featured-section {
+  max-width: 1100px;
+  margin: 28px auto;
+  padding: 0 20px;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-top: 12px;
+}
+
+/* Featured card */
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #fff 0%, #fafafa 100%);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.featured-card .featured-media img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.featured-card .featured-body {
+  padding: 14px 16px;
+}
+
+/* Controls */
+.controls select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* List view for cars container */
+.cars-container.list-view {
+  display: block;
+  padding: 0 40px 40px;
+}
+
+.cars-container.list-view .car-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.cars-container.list-view .car-card img {
+  width: 220px;
+  height: 140px;
+  flex: 0 0 220px;
+}
+
+.btn.active {
+  background: #1f2937;
+}
